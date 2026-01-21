@@ -1,165 +1,91 @@
-🎓 Student Feedback & Sentiment Analysis Dashboard
+📊 E-Commerce Sales Dashboard
 📌 Project Overview
 
-This project analyzes student feedback collected from academic courses and college events to understand overall satisfaction and sentiment. Using Data Science, Natural Language Processing (NLP), and Power BI, the project transforms raw feedback data into meaningful insights that help institutions improve course quality and student experience.
+This project focuses on analyzing e-commerce sales data to uncover meaningful business insights. The data was cleaned and explored using Python in Jupyter Notebook, followed by the creation of an interactive Power BI dashboard for effective business reporting.
 
 🎯 Objectives
 
-Clean and preprocess student feedback data
+Analyze sales performance over time
 
-Analyze rating distributions using weightage columns
+Identify top-performing products and categories
 
-Perform sentiment analysis on feedback questions
+Understand regional sales distribution
 
-Create interactive dashboards using Power BI
-
-Generate insights and recommendations for improvement
-
-🗂️ Dataset Description
-
-The dataset is collected in CSV format (exported from a feedback system or Google Form).
-
-Columns Used:
-
-SN – Serial Number
-
-Total Feedback Given – Number of responses received
-
-Total Configured – Total expected responses
-
-Questions – Student feedback text
-
-Weightage 1–5 – Rating distribution
-
-Average / Percentage – Overall score (if available)
-
-Course Name – Name of the course
-
-Basic Course – Course category
+Evaluate overall profitability
 
 🛠️ Tools & Technologies
-Tool	Purpose
-Python	Data analysis
-Pandas	Data cleaning & preprocessing
-TextBlob	Sentiment analysis
-Matplotlib & Seaborn	Data visualization
-Google Colab	Notebook execution
-Power BI	Interactive dashboard creation
-Power Query	Data transformation
-🧹 Data Cleaning & Transformation
 
-Removed null and inconsistent values
+Python (Pandas, Matplotlib)
 
-Standardized column names
+Jupyter Notebook
 
-Converted rating columns to numeric format
+Power BI (DAX, Interactive Visuals)
 
-Created a Calculated Score using rating weightages
+Excel / CSV Dataset
 
-Generated sentiment categories (Positive, Neutral, Negative)
+📂 Project Structure
+├── data/
+│   ├── Superstore.csv
+│   ├── Cleaned_Superstore_Data.csv
+├── notebook/
+│   ├── Ecommerce_Sales_Analysis.ipynb
+├── powerbi/
+│   ├── Ecommerce_Sales_Dashboard.pbix
+├── README.md
 
-🧠 Sentiment Analysis
+🔄 Workflow
 
-Sentiment analysis was performed on the Questions column using TextBlob.
-Feedback was classified as:
+Loaded and cleaned raw sales data using Python
 
-Positive
+Performed exploratory data analysis (EDA)
 
-Neutral
+Created time-based features for trend analysis
 
-Negative
+Built DAX measures for KPIs in Power BI
 
-This helped convert unstructured text into structured insights.
+Designed an interactive dashboard with filters and charts
 
-📊 Power BI Dashboard Features
+📊 Dashboard Features
 
-Sentiment distribution (Pie chart)
+KPI cards (Total Sales, Profit, Orders, Profit Margin)
 
-Average rating by sentiment
+Monthly and yearly sales trends
 
-Course-wise satisfaction analysis
+Category and sub-category performance
 
-Feedback count by course
+Region-wise sales analysis
 
-Interactive slicers for filtering
-
-📁 Project Structure
-📦 Student-Feedback-Analysis
- ┣ 📊 PowerBI_Dashboard.pbix
- ┣ 📓 Feedback_Analysis.ipynb
- ┣ 📁 data
- ┃ ┗ Student_Satisfaction_Survey.csv
- ┣ 📄 README.md
-
-🚀 How to Run the Project
-Python Analysis
-
-Open the notebook in Google Colab
-
-Upload the dataset
-
-Run cells sequentially
-
-Power BI Dashboard
-
-Open PowerBI_Dashboard.pbix
-
-Refresh data if required
-
-Explore visuals using slicers
+Top-selling products
 
 📈 Key Insights
 
-Most feedback shows positive sentiment
+Sales show seasonal trends with year-end peaks
 
-Courses with higher calculated scores received more positive responses
+Certain categories generate high revenue but low profit
 
-Negative sentiment highlights improvement areas
+Regional performance varies significantly
 
-Interactive dashboards allow easy exploration of feedback trends
+🚀 How to Use
 
-💡 Recommendations
+Run the Jupyter Notebook to view data cleaning and analysis
 
-Improve pacing and clarity in low-rated courses
+Load the cleaned dataset into Power BI
 
-Increase interactive and practical sessions
+Open the .pbix file to explore the interactive dashboard
 
-Regularly analyze feedback using automated tools
+📚 Learning Outcomes
 
-Use sentiment trends for curriculum planning
+Data cleaning and transformation
 
-📌 Learning Outcomes
+Exploratory data analysis
 
-Hands-on experience with data cleaning and NLP
+DAX fundamentals
 
-Understanding sentiment analysis concepts
+Business storytelling with dashboards
 
-Creating interactive dashboards using Power BI
+👤 Author
+KEERTHIGA C
 
-Translating data insights into real-world recommendations
+📎 Acknowledgement
 
-🧾 References
-
-Google Colab Documentation
-
-Pandas & TextBlob Documentation
-
-Power BI Official Documentation
-
-YouTube Channels:
-
-FreeCodeCamp
-
-Krish Naik
-
-Corey Schafer
-
-Codebasics
-
-🙌 Acknowledgment
-
-This project was completed as part of the Future Interns – Data Science & Analytics Internship Program.
-
-⭐ Connect
-
-If you found this project useful, feel free to ⭐ the repository and connect!
+Dataset inspired by publicly available e-commerce / Superstore sales data used for learning and analysis.
